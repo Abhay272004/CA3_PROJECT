@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+    background-color: black; 
+}
+header {
+    margin-top: 2%;
+    animation: fadeIn 1s ease-in-out;
+    
+}
+.HTML1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: slideInFromTop 1s ease-in-out;
+    
+
+}
+.HTML1 .LEFT {
+    width: 100px;
+    padding-right: 30%;
+    animation: rotateIn 1s ease-in-out;
+
+}
+.HTML1 .CENTER a {
+    padding-right: 40px;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    animation: fadeInUp 1s ease-in-out;
+
+}
+.HTML1 .RIGHT a {
+    padding-right: 30px;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+.HTML1 .CENTER a:hover,
+.RIGHT a:hover {
+    color: rgb(0, 112, 74);
+    text-shadow: 0px 0px 30px rgb(0, 112, 74);
+}
+.HTML1 .CENTER a:first-child {
+    color: rgb(0, 112, 74)
+}
+.CONTENT {
+    width: 40%;
+    position: relative;
+    top: 9rem;
+    left: 6rem;
+    letter-spacing: 0.5px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.CONTENT h1 { 
+    font-weight: bold;
+    font-size: 5rem;
+    padding-bottom: 15px;
+    animation: fadeInUp 1s ease-in-out;
+    color: rgb(0, 112, 74);
+}
+.btn{
+    color: rgb(0, 112, 74);
+    border: 2px solid;
+    position: relative;
+    top: 3rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    animation: fadeInUp 1s ease-in-out 0.5s backwards;
+
+     
+}
+.CONTENT .btn:hover {
+    box-shadow: 0 0 10px 2px rgb(0, 112, 74);
+}
+
+.COFFEE {
+    position: fixed;
+    bottom: 20px;
+    left: 85%; 
+    animation: slideInFromBottom 1s ease-in-out 1.5s backwards;
+    cursor: pointer;
+}
+.COFFEE img {
+    padding-bottom: 50px;
+    width: 50%;
+    transition: transform 0.3s ease;
+    animation: slideInFromBottom 1s ease-in-out 1.5s backwards;
+}
+.COFFEE img:hover{
+    transform: scale(1.3);
+}
+.COFFEE-HTML3 img{
+    position: absolute;
+    left: 47%;
+    top: 10rem;
+    width: 28%;
+   cursor: pointer;
+    filter: drop-shadow(30px 30px 380px);
+    animation: fadeInUp 1s ease-in-out 2.5s backwards;
+}
+.COFFEE-HTML3 img.active{
+    display: block;
+    
+    
+} 
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+@keyframes sildeInFromTop{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInFromBottom{
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+    }
+
+}
+@keyframes rotateIn{
+    from{
+        transform: rotate3d(0, 0, 1,);
+        opacity: 0;
+
+
+    }
+        to{
+            transform: none;
+            opacity: 1;
+        }
+    
+}
+
+
+
+ 
+ 
